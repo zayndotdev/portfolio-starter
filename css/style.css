@@ -1,0 +1,273 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.6rem 4.8rem;
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle img {
+  width: 2.4rem;
+}
+
+/* Navigation Links */
+.navbar {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  color: #228be6;
+}
+
+.nav-link.nav-cta:link,
+.nav-link.nav-cta:visited {
+  background-color: #228be6;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 9px;
+}
+.nav-link.nav-cta:hover,
+.nav-link.nav-cta:active {
+  background-color: #1f7dcf;
+}
+.nav-link.active {
+  border-bottom: 2px solid #1abc9c;
+  color: #1abc9c;
+}
+
+/* nav0verlay */
+
+/* Overlay styles */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Navbar Styles */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.open {
+  display: flex;
+  position: fixed;
+  top: 7rem;
+  right: 0;
+  background-color: white;
+  z-index: 10;
+  width: 75%;
+  max-width: 300px;
+  padding: 2rem;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Hero Section */
+.section-hero {
+  padding: 6.4rem 0;
+}
+
+.hero-text-box .heading-primary {
+  font-size: 5.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.emoji-text {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.profession-text {
+  font-size: 4.4rem;
+  color: #228be6;
+}
+
+.hero-text {
+  font-size: 2rem;
+}
+
+.hero-img {
+  max-width: 45rem;
+  width: 100%;
+}
+
+/* Tools */
+.section-tools {
+  padding: 9.6rem 0rem 6.4rem;
+  text-align: center;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.tools-desktop {
+  display: flex;
+}
+.tools-mobile {
+  display: none;
+}
+
+.tools-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.tool {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 70, 0.1);
+}
+
+.tool img {
+  width: 4rem;
+}
+
+/* Projects */
+.section-projects {
+  padding: 9.6rem 0rem 6.4rem;
+}
+
+.project {
+  background-color: #fafafa;
+  /* padding: 2rem; */
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.project:hover {
+  box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-1rem);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+
+  /* border-radius: 0.5rem; */
+}
+.project-content {
+  padding: 2.4rem;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+}
+.project-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.project hr {
+  width: 90%;
+  border: none;
+  height: 2px;
+  border-radius: 100%;
+  background-color: #ccc;
+  margin: 0 auto;
+  margin-bottom: 1.6rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+/* footer */
+.footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer .social-icons {
+  margin-top: 1rem;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #1abc9c;
+}

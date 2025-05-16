@@ -1,0 +1,41 @@
+@media (max-width: 992px) {
+  html {
+    font-size: 56.25%;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    padding: 0 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tools-desktop {
+    display: none;
+  }
+  .tools-mobile {
+    display: flex;
+  }
+}
