@@ -1,3 +1,5 @@
+const myName = "zayn";
+
 const navToggle = document.querySelector(".nav-toggle");
 const navbar = document.querySelector(".navbar");
 const overlay = document.querySelector(".nav-overlay");
